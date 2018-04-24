@@ -62,14 +62,19 @@ public class VolleyActivity extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.POST, Constant.USERINFO_USERLOGIN, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                Log.i("aa", "post请求成功" + response);
+
                 Gson gson = new Gson();
                 BaseReSelt baseReSelt = gson.fromJson(response, BaseReSelt.class);
-                EntityDis disposeResult = baseReSelt.getDisposeResult();
-                Log.i("aa", "post请求成功" + baseReSelt);
-                String userType = disposeResult.getUserType();
-                Log.i("aa", "userType" + userType);
-
-
+                EntityInv invokingResult = baseReSelt.getInvokingResult();
+                if (invokingResult.getInvoking().equals("fail")) {
+                    return;
+                } else {
+                    EntityDis disposeResult = baseReSelt.getDisposeResult();
+                    Log.i("aa", "post请求成功" + baseReSelt);
+                    String userType = disposeResult.getUserType();
+                    Log.i("aa", "userType" + userType);
+                }
             }
         }, new Response.ErrorListener() {
             @Override

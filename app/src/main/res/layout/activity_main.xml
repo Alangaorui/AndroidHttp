@@ -14,18 +14,18 @@
         android:gravity="center"
         android:onClick="onClick"
         android:textSize="18dp"
-        android:padding="5dp"
+        android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"/>
     <TextView
         android:id="@+id/okhttp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="okhttp"
+        android:text="okhttp3"
         android:gravity="center"
         android:textSize="18dp"
         android:onClick="onClick"
-        android:padding="5dp"
+        android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"/>
 
@@ -37,7 +37,7 @@
         android:gravity="center"
         android:textSize="18dp"
         android:onClick="onClick"
-        android:padding="5dp"
+        android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"/>
     <TextView
@@ -48,7 +48,7 @@
         android:gravity="center"
         android:textSize="18dp"
         android:onClick="onClick"
-        android:padding="5dp"
+        android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"/>
     <TextView
@@ -58,7 +58,7 @@
         android:gravity="center"
         android:textSize="18dp"
         android:onClick="onClick"
-        android:padding="5dp"
+        android:padding="10dp"
         android:background="@color/colorPrimary"
         android:layout_marginTop="10dp"/>
 

@@ -7,7 +7,7 @@ package com.grant.volley;
 
 public class Constant {
 
-    public static String BASE_URI = "********";//请求的接口
+    public static String BASE_URI = "http://172.161.1.246:90/SMPWeb";
 
     public static String USERINFO_USERLOGIN = BASE_URI + "/userInfo/userLogin";
 }

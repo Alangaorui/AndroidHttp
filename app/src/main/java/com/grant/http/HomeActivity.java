@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.grant.okhttp.OkhttpActivity;
 import com.grant.volley.VolleyActivity;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,6 +29,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e(TAG,"volley"+"volley");
                 Intent volleyintent = new Intent(HomeActivity.this,VolleyActivity.class);
                 startActivity(volleyintent);
+                break;
+            case R.id.okhttp:
+                Intent okhttpintent = new Intent(HomeActivity.this, OkhttpActivity.class);
+                startActivity(okhttpintent);
                 break;
         }
     }
